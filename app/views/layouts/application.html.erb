@@ -21,6 +21,8 @@
       </div>
     <% end %>
 
+    <%= link_to "Sign in", new_user_session_path %>
+
     <% if user_signed_in? %>
       Signed in as <%= current_user.email %>
     <% else %>
